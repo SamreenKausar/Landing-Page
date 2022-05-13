@@ -2,21 +2,75 @@ body{
     height: 100vh;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+button{
+    background-color: #3882f6;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #f9faf8;
+    padding: 8px  32px ;
 }
 
 .container {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     background-color: #1F2937;
     color: #f9faf8;
     font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    color: #f9faf8;
+    font-size: 24px;
+}
+.header ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #e5e7eb;
+    font-size: 18px;
 }
 .banner {
+    height: 400px;
     background-color: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    
+    
 }
+.banner div {
+    flex: 1;
+    max-width: 500px;
+    height: 200px;
+    
+}
+.banner h1{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+    padding: 0;
+    margin: 16px 0;
+    
+}
+.banner p{
+    color: #e5e7eb;
+    font-size: 18px;
+    padding: 0;
+    margin: 16px 0;
+}
+
+
 .main {
 
 }
