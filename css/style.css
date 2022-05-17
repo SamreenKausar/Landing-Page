@@ -1,82 +1,168 @@
-body{
-    height: 100vh;
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    height: 100vh;
     font-family: 'Roboto', sans-serif;
+    background-color: #0e0e0f;
 }
-button{
-    background-color: #3882f6;
-    border-radius: 8px;
-    border: none;
-    font-size: 18px;
-    font-weight: 600;
-    color: #f9faf8;
-    padding: 8px  32px ;
-}
-
 .container {
     display: flex;
     flex-direction: column;
+    margin: 0 190px;  
 }
-
 .header {
     background-color: #1F2937;
     color: #f9faf8;
     font-weight: bolder;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 0;
 }
-.logo{
+.header .logo{
     color: #f9faf8;
     font-size: 24px;
 }
 .header ul{
     display: flex;
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
     list-style: none;
+    
+}
+.header ul li {
     color: #e5e7eb;
     font-size: 18px;
+    font-weight: 500;
+    margin-left: 8px;
+    padding: 8px;
 }
 .banner {
     height: 400px;
     background-color: #1F2937;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 32px 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 32px;
-    
-    
+    gap: 32px;
+  
 }
 .banner div {
-    flex: 1;
-    max-width: 500px;
-    height: 200px;
+    height: 225px;
+    width: 500px;
     
 }
 .banner h1{
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
-    padding: 0;
-    margin: 16px 0;
-    
 }
 .banner p{
     color: #e5e7eb;
     font-size: 18px;
-    padding: 0;
-    margin: 16px 0;
+    
+}
+button{
+    background-color: #3882f6;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #f9faf8;
+    padding: 8px  32px ;
+}
+.banner button{
+    margin-top: 16px;
 }
 
+.img{   
+        height: 400px;
+        background-color: #6d747d;
+        color: #e5e7eb;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.rand-info{
+    background-color: #f9faf8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 500px;
+    padding: 32px 0 64px 0;
+}
+.rand-info h1{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: bolder;
+}
+.rand-info div{
+    display: flex;
+    justify-content: space-around;
 
-.quote {
-background-color: #e5e7eb;
+}
+.images {
+    width: 160px;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.images p{
+    text-align: center;
+    font-size: 18px;
+    color: #6d747d;
+}
+.images img{
+    height: 160px;
+    width: 160px;
+    border: 3px solid #3882f6;
+    border-radius: 16px;
+    margin-bottom: 16px;
+     
+ }
+ .quote {
+     height: 400px;
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 280px;
+    }
+.quote p {
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    text-align: left;
+    margin: 32px auto;
+}
+.quote h6 {
+    font-size: 24px;
+    font-weight: 600;
+    align-self: flex-end;
 }
 .sign-up {
-background-color: #3882f6;
+    background-color: #f9faf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.sign-up div{
+    background-color: #3882f6;
+    border: 1px solid #3882f6;
+    border-radius: 8px;
+    width: 900px;
+    height: 150px;
+    margin: 64px auto;
 }
+
 .footer {
     background-color: #1F2937;
 }
